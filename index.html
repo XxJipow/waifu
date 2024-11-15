@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Waifu OS</title>
-<link rel="icon" href="pfp2.png" type="image/x-icon">
+<title>hentAI</title>
+<link rel="icon" href="pfp.png" type="image/x-icon">
 <style>
 :root {
   --main-bg: #000000;
@@ -302,7 +302,7 @@ body {
   Your browser does not support the audio element.
 </audio>
 <div id="click-to-enter">
-  <h2>Click to find a Waifu</h2>
+  <h2>Enter</h2>
 </div>
 
 <div class="sidebar" style="display: none;">
@@ -329,7 +329,7 @@ body {
 <div class="main-content" style="display: none;">
   <div class="window">
     <div class="window-header">
-      <span>WaifuOS Terminal (◕‿◕✿)</span>
+      <span>hentAI Terminal (◕‿◕✿)</span>
       <div class="window-controls">
         <div class="window-button" style="background: #ff69b4;"></div>
         <div class="window-button" style="background: #ff1493;"></div>
@@ -347,18 +347,18 @@ body {
          <br>
           (m___m)
           <br><br>
-        WaifuOS V6900
+        hentAI V6900
         </div>
         
         <div id="output">
-          WaifuOS (´･ω･`) - A Kawaii Common Lisp Operating System<br>
+          hentAI (´･ω･`) - A Kawaii Common Lisp Operating System<br>
           Based on Waifus ✧˖°<br>
-          © WaifuOS Development Team<br><br>
+          © hentAI Development Team<br><br>
           Type 'help' for commands (｡♥‿♥｡)
         </div>
 
         <div class="command-line">
-          <span class="prompt">kawaii@waifuos:~$</span>
+          <span class="prompt">kawaii@hentai:~$</span>
           <input type="text" id="command-input" autofocus>
           <span class="cursor">▌</span>
         </div>
@@ -369,7 +369,7 @@ body {
 
 <div class="taskbar" style="display: none;">
   <button class="start-button">♥ Start</button>
-  <span style="color: var(--main-bg);">Running processes: WaifuOS Terminal</span>
+  <span style="color: var(--main-bg);">Running processes: hentAI Terminal</span>
 </div>
 
 <div class="start-menu" style="display: none;">
@@ -382,7 +382,7 @@ body {
 
 <div class="character-window" style="display: none;">
   <div class="window-header">
-    <span>Waifu Assistant (◕‿◕✿)</span>
+    <span>hentAI Assistant (◕‿◕✿)</span>
     <div class="window-controls">
       <div class="window-button" style="background: #ff69b4;"></div>
       <div class="window-button" style="background: #ff1493;"></div>
@@ -424,20 +424,20 @@ const commands = {
     • kawaii - Toggle extra kawaii mode<br>
     • lisp - Open Lisp REPL<br>
     • clear - Clear terminal<br>
-    • shutdown - Exit WaifuOS (;´□｀)<br>
+    • shutdown - Exit hentAI (;´□｀)<br>
     • greet - Say hello to the user<br>
     • joke - Tell a kawaii joke<br>
     • weather - Show the current weather<br>
     • inspire - Give an inspirational quote<br>
     • time - Show the current time<br>
     • date - Show today's date<br>
-    • info - Display information about WaifuOS<br>
+    • info - Display information about hentAI<br>
     • graphics - Show graphics information<br>
     • terminal - Open terminal<br>
     • settings - Show system settings<br>
   `,
   nyaa: () => `
-    WaifuOS System Information:
+    hentAI System Information:
     • Kernel: KawaiiKernel 1.0
     • Architecture: x86-64 (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
     • Memory: 16GB RAM (so powerful!)
@@ -449,7 +449,7 @@ const commands = {
   },
   lisp: () => {
     return `
-      WaifuOS LISP REPL (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+      hentAI LISP REPL (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
       Try these Common Lisp system commands:
       
       (os:list-processes)  ; List running processes
@@ -469,11 +469,11 @@ const commands = {
   },
   greet: () => "Hello there! (◕‿◕✿) How can I assist you today?",
   joke: () => "Why did the computer go to the doctor? Because it had a virus! (≧◡≦)",
-  weather: () => "The weather is always sunny in WaifuOS! ☀️",
+  weather: () => "The weather is always sunny in hentAI! ☀️",
   inspire: () => "Believe in yourself and all that you are! (✿◠‿◠)",
   time: () => `Current time: ${new Date().toLocaleTimeString()}`,
   date: () => `Today's date: ${new Date().toLocaleDateString()}`,
-  info: () => "WaifuOS is a Kawaii Common Lisp Operating System designed for fun and creativity! (｡♥‿♥｡)",
+  info: () => "hentAI is a Kawaii Common Lisp Operating System designed for fun and creativity! (｡♥‿♥｡)",
   graphics: () => {
     // Open graphics in a new window with a random image
     const images = [
